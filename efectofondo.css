@@ -1,0 +1,228 @@
+* {
+    margin:0;
+	padding:0;
+	
+}		
+
+
+
+.fondoanimacion {
+    width:100%;
+	height:100vh;
+	background:;
+	
+	
+}
+.contenidoanimacion{
+    position:fixed;
+	top:0;
+	margin:auto;
+    width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:space-between;
+	background:#000;
+	overflow:hidden;
+	z-index:-1;
+
+}
+.cala{
+    color:#909090;
+	font-size:14px;
+	
+}
+.sec1, .sec2, .sec3, .sec4, .sec5, .sec6 {
+    width:16%;
+	display:flex;
+	justify-content:space-between;
+	
+}
+
+.sec1 li, .sec2 li, .sec3 li, .sec4 li, .sec5 li, .sec6 li {
+	list-style:none;
+}
+
+
+
+.sec1 li:nth-child(1) {
+   animation:mover 15s infinite;
+}
+.sec1 li:nth-child(2) {
+   animation:mover 12s infinite;
+}
+.sec1 li:nth-child(3) {
+   animation:mover 10s infinite;
+}
+.sec1 li:nth-child(4) {
+   animation:mover 17s infinite;
+}
+.sec1 li:nth-child(5) {
+   animation:mover 19s infinite;
+}
+.sec1 li:nth-child(6) {
+   animation:mover 20s infinite;
+}
+@keyframes mover {
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(1000px,100%)}
+	100%{transform:translate(0px,-2%)}
+}
+.sec2 li:nth-child(1) {
+   animation:mover2 15s infinite;
+}
+.sec2 li:nth-child(2) {
+   animation:mover2 12s infinite;
+}
+.sec2 li:nth-child(3) {
+   animation:mover2 10s infinite;
+}
+.sec2 li:nth-child(4) {
+   animation:mover2 17s infinite;
+}
+.sec2 li:nth-child(5) {
+   animation:mover2 19s infinite;
+}
+.sec2 li:nth-child(6) {
+   animation:mover2 14s infinite;
+}
+@keyframes mover2{
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(-1000px,100%)}
+	100%{transform:translate(0px,-3%)}
+}
+.sec3 li:nth-child(1) {
+   animation:mover2 15s infinite;
+}
+.sec3 li:nth-child(2) {
+   animation:mover2 12s infinite;
+}
+.sec3 li:nth-child(3) {
+   animation:mover2 18s infinite;
+}
+.sec3 li:nth-child(4) {
+   animation:mover2 17s infinite;
+}
+.sec3 li:nth-child(5) {
+   animation:mover2 26s infinite;
+}
+.sec3 li:nth-child(6) {
+   animation:mover2 20s infinite;
+}
+@keyframes mover2{
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(-1000px,100%)}
+	100%{transform:translate(0px,-3%)}
+}
+.sec4 li:nth-child(1) {
+   animation:mover 25s infinite;
+}
+.sec4 li:nth-child(2) {
+   animation:mover 12s infinite;
+}
+.sec4 li:nth-child(3) {
+   animation:mover 13s infinite;
+}
+.sec4 li:nth-child(4) {
+   animation:mover 17s infinite;
+}
+.sec4 li:nth-child(5) {
+   animation:mover 21s infinite;
+}
+.sec4 li:nth-child(6) {
+   animation:mover 20s infinite;
+}
+@keyframes mover {
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(1000px,100%)}
+	100%{transform:translate(0px,-1%)}
+}
+.sec5 li:nth-child(1) {
+   animation:mover2 18s infinite;
+}
+.sec5 li:nth-child(2) {
+   animation:mover2 12s infinite;
+}
+.sec5 li:nth-child(3) {
+   animation:mover2 23s infinite;
+}
+.sec5 li:nth-child(4) {
+   animation:mover2 17s infinite;
+}
+.sec5 li:nth-child(5) {
+   animation:mover2 26s infinite;
+}
+.sec5 li:nth-child(6) {
+   animation:mover2 20s infinite;
+}
+@keyframes mover2{
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(-1000px,100%)}
+	100%{transform:translate(0px,-3%)}
+}
+.sec6 li:nth-child(1) {
+   animation:mover 18s infinite;
+}
+.sec6 li:nth-child(2) {
+   animation:mover 12s infinite;
+}
+.sec6 li:nth-child(3) {
+   animation:mover 23s infinite;
+}
+.sec6 li:nth-child(4) {
+   animation:mover 17s infinite;
+}
+.sec6 li:nth-child(5) {
+   animation:mover 26s infinite;
+}
+.sec6 li:nth-child(6) {
+   animation:mover 20s infinite;
+}
+@keyframes mover{
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(1000px,100%)}
+	100%{transform:translate(0px,-3%)}
+}
+@media (max-width:450px){
+	@keyframes mover {
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(250px,100%)}
+	100%{transform:translate(0px,-3%)}
+}
+}
+@media (max-width:450px){
+	@keyframes mover2 {
+    0%{transform:translate(0px,0%)}
+	50%{transform:translate(-250px,100%)}
+	100%{transform:translate(0px,-3%)}
+}
+}
+
+/*----animacion para cambair tamaños y colores--------------------------*/
+.sec1 li i {
+   animation:forma 6s infinite;
+}
+.sec2 li i {
+   animation:forma 8s infinite;
+}
+.sec3 li i {
+   animation:forma 4s infinite;
+}
+.sec4 li i {
+   animation:forma 7s infinite;
+}
+.sec5 li i {
+   animation:forma 10s infinite;
+}
+.sec6 li i {
+   animation:forma 3s infinite;
+}
+
+@keyframes forma {
+    0%{color:#909090; font-size:10px; opacity:1}
+	25%{color:#5A91FF; font-size:14px; opacity:0.6}
+	50%{color:#fff; font-size:20px; opacity:0.8}
+	75%{color:#606060; font-size:16px; opacity:0.3}
+	100%{color:#909090; font-size:8px; opacity:1}
+}
+
+	

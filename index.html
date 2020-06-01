@@ -1,0 +1,175 @@
+		<!DOCTYPE html>
+<html>	
+<head>
+    <title>Escalar imagenes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Calculadora.css">
+    <link rel="stylesheet" href="efectofondo.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="Calculadora.js"></script>
+	
+</head>
+<body>
+<div class="fondoanimacion">
+<div class="contenidoanimacion">
+<!--<li class="section1"><i  class='fas cala'>&#xf714;</i></li>calaberas-->
+<div class="sec1">
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+</div>
+<div class="sec3">
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+</div>
+<div class="sec5">
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    
+</div>
+<div class="sec6">
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+</div>
+<div class="sec4">
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+</div>
+<div class="sec2">
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+    <li class="section1"><i class='fab cala'>&#xf50d;</i></li>
+</div>
+
+
+
+
+</div>
+
+
+<div class="contenidoPagina">
+<!--****************************************************************************************-->
+    <div class="contenedor" id="campos">
+	
+	    <div style="margin-top:5px; display:flex; justify-content:space-between">
+		  
+		    <button  id="vint"style="display:; margin-left:5%;border:1px solid #909090; border-radius:15px; padding:5px 5px; background:#050505; color:#fff" 
+			onclick="dark()">   <i style='font-size:24px' class='fas'>&#xf011;</i></button>
+			<button  id="dark"style="display:none;margin-left:5%;border:1px solid #909090; border-radius:15px; padding:5px 5px; background:#050505; color:#5DF700" 
+			onclick="vintage()"><i style='font-size:24px' class='fas'>&#xf011;</i></button>
+	    
+		    <div class="menu">
+			</div>
+		</div>
+		<script>
+		function dark(){
+		    document.getElementById('campos').style.background='#505050';
+		    document.getElementById('dark').style.display='block';
+		    document.getElementById('vint').style.display='none';
+			
+			}
+		function vintage(){
+		    document.getElementById('campos').style.background=
+			'linear-gradient(to bottom right,rgba(255,255,255,.4), rgba(0,0,0,.6), rgba(0,0,0,1), rgba(0,0,0,1))'
+			document.getElementById('dark').style.display='none';
+		    document.getElementById('vint').style.display='block';
+			}
+		
+		</script>
+	    <h1>Escalar imagenes</h1>
+
+        <p class="p">Ingresa las medidas de la imagen.</p>
+       <form >
+        
+            
+       
+		<!--Valores de la imagen-->
+		<div class="campos">
+		  
+		    <input class="botones" type="text" id="width" placeholder="width" size="5" maxlength="4"></br>
+			<input  class="botones"type="text" id="height" placeholder="height" size="5" maxlength="4"></br>
+		</div>
+		
+
+		<!--Porcentaje a convertir-->
+		<div class="campos">
+		     <label  style="color:#fff;"  for="porcentaje">Porcentaje a convertir:</label>
+		    
+		</div>
+		
+		<div class="campos">
+		     
+		    <input class="botones" type="text" id="porcentaje" placeholder="%" size="3"></br>
+		</div>
+		
+		<p class="p">O puedes ingresar el width o Height deseado a convertir.</p>
+		 <!--Nuevos valores-->  
+	    <div class="campos">
+		    
+		    <input class="botones" type="text" id="width2" placeholder="Width deseado" size="10" maxlength="4"></br>
+		</div>
+		
+	    <div class="campos">
+		    
+		    <input class="botones" type="text" id="height2" placeholder="Height deseado" size="10" maxlength="4"></br>
+		</div>
+		<!--Botones de accion-->
+        <div class="campos">
+            <input class="borrar" type="reset" value="Borrar"></input>
+        </div>
+	</form>
+		<div class="campos">
+            <button class="calcular" onclick="myFunction()">Calcular</button>
+		   
+        </div>
+		<!---Resultados-->
+		
+            <p class="p">Resultado:</p>
+        <div class="campos">
+          
+		    <p class="presultado" id="resultado"  ></p>
+		
+		</div>
+
+		
+
+	     <div class="campos">
+          
+		    <p class="presultado2"id="resultado2"></p>
+		
+		</div>	
+		
+       
+
+
+
+
+	</div>
+<!--****************************************************************************************-->
+</div>
+</div>
+</body>
+</html>
